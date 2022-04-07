@@ -1,0 +1,13 @@
+## index fruits
+GET http://localhost:3000/fruits.json
+
+
+### create fruit
+POST http://localhost:3000/fruits.json
+content-type: application/json
+
+{
+  "name": "grapes",
+  "color": "purple",
+  "flavor": "rich and sweet, like the Concord grape, to the slightly spicy Black Beauty grape."
+}

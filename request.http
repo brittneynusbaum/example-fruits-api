@@ -11,3 +11,6 @@ content-type: application/json
   "color": "purple",
   "flavor": "rich and sweet, like the Concord grape, to the slightly spicy Black Beauty grape."
 }
+
+### show fruit
+GET http://localhost:3000/fruits/10.json

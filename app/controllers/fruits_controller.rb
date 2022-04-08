@@ -18,5 +18,14 @@ class FruitsController < ApplicationController
     fruit = Fruit.find(params[:id])
     render json: fruit.as_json
   end
+
+  def update
+    fruit = Fruit.find(params[:id])
+    fruit.name = params[:name] || fruit.name
+    fruit.color = params[:color] || fruit.color
+    fruit.flavor = params[:flavor] || fruit.flavor
+    fruit.save
+    render json: fruit.as_json
+  end
   
 end

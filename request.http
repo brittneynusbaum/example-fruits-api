@@ -13,4 +13,12 @@ content-type: application/json
 }
 
 ### show fruit
-GET http://localhost:3000/fruits/10.json
+GET http://localhost:3000/fruits/5.json
+
+### update fruit
+PATCH http://localhost:3000/fruits/3.json
+content-type: application/json
+
+{
+  "flavor": "melon, pineapple, candy and clove flavor notes"
+}

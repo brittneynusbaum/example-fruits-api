@@ -27,5 +27,11 @@ class FruitsController < ApplicationController
     fruit.save
     render json: fruit.as_json
   end
+
+  def destroy
+    fruit = Fruit.find(params[:id])
+    fruit.destroy
+    render json: {message: "successfully deleted!"}
+  end
   
 end

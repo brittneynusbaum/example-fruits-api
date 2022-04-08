@@ -22,3 +22,6 @@ content-type: application/json
 {
   "flavor": "melon, pineapple, candy and clove flavor notes"
 }
+
+### delete fruit
+DELETE http://localhost:3000/fruits/7.json

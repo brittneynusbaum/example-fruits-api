@@ -8,7 +8,8 @@ class FruitsController < ApplicationController
     fruit = Fruit.new(
       name: params[:name],
       color: params[:color],
-      flavor: params[:flavor]
+      flavor: params[:flavor],
+      image: params[:image]
     )
     fruit.save
     render json: fruit.as_json
@@ -24,6 +25,7 @@ class FruitsController < ApplicationController
     fruit.name = params[:name] || fruit.name
     fruit.color = params[:color] || fruit.color
     fruit.flavor = params[:flavor] || fruit.flavor
+    fruit.image = params[:image] || fruit.image
     fruit.save
     render json: fruit.as_json
   end

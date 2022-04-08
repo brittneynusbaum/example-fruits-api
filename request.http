@@ -7,9 +7,10 @@ POST http://localhost:3000/fruits.json
 content-type: application/json
 
 {
-  "name": "grapes",
-  "color": "purple",
-  "flavor": "rich and sweet, like the Concord grape, to the slightly spicy Black Beauty grape."
+  "name": "lemon",
+  "color": "yellow",
+  "flavor": "tart and sour",
+  "image": "https://cdn-prod.medicalnewstoday.com/content/images/articles/283/283476/lemons-can-be-healthful-and-refreshing.jpg"
 }
 
 ### show fruit
